@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Meet the Partners</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 10px;
+      }
+
+      h1,
+      h2 {
+        font-weight: 700;
+        margin: 0;
+      }
+
+      h4 {
+        font-weight: 500;
+        font-size: 0.8rem;
+        color: #e13128;
+        margin: 0;
+      }
+
+      p {
+        font-weight: 400;
+      }
+
+      #main-container {
+        font-family: "Poppins", sans-serif;
+        font-weight: 300;
+        width: 794px;
+        height: 1123px;
+        border: 1px solid black;
+        box-sizing: border-box;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 200px 1fr;
+        grid-template-areas:
+          "top top"
+          "left right";
+        background-color: #26263b;
+        color: white;
+      }
+
+      #top {
+        grid-area: top;
+        position: relative;
+        padding: 125px 40px;
+      }
+
+      #top img {
+        position: absolute;
+        top: 70px;
+        right: 80px;
+      }
+
+      #top h1 {
+        position: relative;
+      }
+
+      #top h1::before {
+        content: "";
+        position: absolute;
+        top: -1.5rem;
+        left: 0;
+        width: 4.5rem;
+        height: 3px;
+        background-color: #e13128;
+      }
+
+      #left,
+      #right {
+        padding: 60px 40px;
+        display: grid;
+        grid-template-rows: 150px 1fr;
+      }
+
+      #left {
+        grid-area: left;
+      }
+
+      #right {
+        grid-area: right;
+      }
+
+      .header {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+      }
+
+      .header div:first-child {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+      }
+
+      .body {
+        font-size: 0.9rem;
+        text-align: justify;
+        display: flex;
+        flex-direction: column;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="main-container">
+      <div id="top">
+        <h1>Meet the Partners</h1>
+        <img src="./img/logo-light-e.png" alt="Exeo Logo" width="30px" />
+      </div>
+      <div id="left">
+        <div class="bio header">
+          <div>
+            <h2>Francis <br />Tourigny</h2>
+            <h4>B.C.L., QUÉBEC BAR</h4>
+          </div>
+          <img src="" alt="Headshot " />
+        </div>
+        <div class="bio body">
+          <p>
+            Francis has been practicing law in the immigrant investor industry
+            since 2009, with a focus on Canadian and U.S. business immigration
+            law. He assists investors, entrepreneurs, workers, and multinational
+            companies throughout the process of obtaining visas, work permits,
+            and permanent residency.
+          </p>
+          <p>
+            Before co-founding Exeo, Francis worked for one of the leading
+            business immigration firms in Hong Kong, where he helped hundreds of
+            individuals emigrate to Canada and the United States. In addition to
+            representing numerous clients, Francis regularly travels to the
+            United States, Europe, Latin America, and Asia, where he gives
+            lectures on business immigration topics.
+          </p>
+          <p>
+            Francis began his career at two of Canada’s most prestigious law
+            firms. He holds a law degree from the University of Montreal and the
+            Université Paris-1 Panthéon-Sorbonne. He also has a bachelor’s
+            degree in sociology and political science from the University of
+            Montreal.
+          </p>
+        </div>
+      </div>
+      <div id="right">
+        <div class="bio header">
+          <div>
+            <h2>Marc-André <br />Séguin</h2>
+            <h4>B.C.L., LL.B, LL.M., QUÉBEC BAR, <br />NEW YORK STATE BAR</h4>
+          </div>
+          <img src="" alt="Headshot" />
+        </div>
+        <div class="bio body">
+          <p>
+            Marc-André has been practicing law in the immigrant investor
+            industry since 2010, focusing on U.S. and Canadian business
+            immigration law. He is a frequent international speaker on Canadian
+            and U.S. immigration law topics and is often invited to comment on
+            these issues in media and publications worldwide.
+          </p>
+          <p>
+            He has published a widely-read manual on the Quebec Immigrant
+            Investor Program and has developed expertise in corporate
+            immigration compliance matters. Additionally, he is the founding
+            president of For the Refugees, an internationally recognized NGO
+            based in Canada, and serves as the Vice President of the
+            Canada-Florida Chamber of Commerce.
+          </p>
+          <p>
+            Marc-André has personally developed business relationships with
+            professionals in various industries across more than 20 countries
+            and maintains a regular presence in Latin America and Asia. He is
+            fluent in English, Spanish, and French, and has a working knowledge
+            of Portuguese.
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

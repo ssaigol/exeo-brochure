@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meet the Partners</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 10px;
+    }
+
+    h1, h2 {
+        font-weight: 700;
+        margin: 0;
+    }
+
+    h4 {
+        font-weight: 500;
+        font-size: 0.8rem;
+        color: #E13128;
+        margin: 0;
+    }
+
+
+    p {
+        font-weight: 400;
+    }
+
+    #main-container {
+        font-family: 'Poppins', sans-serif;
+        font-weight: 300;
+        width: 794px;
+        height: 1123px;
+        border: 1px solid black;
+        box-sizing: border-box;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 200px 1fr;
+        grid-template-areas: 
+            "top top"
+            "left right"
+        ;
+        background-color: #26263B;
+        color: white;
+    }
+
+    #top {
+        grid-area: top;
+        position: relative;
+        padding: 125px 40px;
+    }   
+
+    #top img {
+        position: absolute;
+        top: 70px;
+        right: 80px;
+    }
+
+    #top h1 {
+        position: relative;
+    }
+
+    #top h1::before {
+        content: "";
+        position: absolute;
+        top: -1.5rem; 
+        left: 0; 
+        width: 4.5rem; 
+        height: 3px; 
+        background-color: #E13128;
+    }
+
+    #left, #right {
+        padding: 60px 40px;
+        display: grid;
+        grid-template-rows: 150px 1fr;
+    }
+
+    #left {
+        grid-area: left;
+    }
+
+
+    #right {
+        grid-area: right;
+    }
+
+    .header {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+    }
+
+    .header div:first-child {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+
+    .body {
+        font-size: 0.8rem;
+        text-align: justify;
+        display: flex;
+        flex-direction: column;
+    }
+
+
+
+  </style>
+</head>
+<body>
+
+    <div id="main-container">
+        <div id="top">
+            <h1>Meet the Partners</h1>
+            <img src="./img/logo-light-e.png" alt="Exeo Logo" width="30px">
+        </div>
+        <div id="left">
+            <div class="bio header">
+                <div>
+                    <h2>Laurence<br>C. Trempe</h1>
+                    <h4>B.C.L., QUÉBEC BAR</h4>
+                </div>
+                <img src="" alt="Headshot ">
+            </div>
+            <div class="bio body">
+                <p>Laurence has been practicing immigration law in the international mobility sector since 2008, focusing on Canadian mobility and immigration law. She serves as the Head of Mobility at Exeo and co-chaired the Quebec Association of Immigration Lawyers (AQAADI) in 2023, with a mandate centered on the economic sector and the mobility of foreign workers. Her co-chair mandate was renewed in June 2024.</p>
+                <p>Laurence is also part of the liaison committees with IRCC, MIFI, and Service Canada. She assists startups, medium-sized businesses, and multinationals in their Canadian expansion; she also helps Canadian companies bring international workforce and talent to Canada.
+                </p>
+                <p>Laurence has led and authored legal reports to the Quebec and Canadian governments on behalf of AQAADI concerning temporary and permanent economic immigration.
+                </p>
+                <p>Before joining Exeo, Laurence worked for three law firms specializing in immigration. She also previously worked for the Canadian federal government in the immigration and customs agency from 2002 to 2008.
+                </p>
+                <p>With 20 years of experience in immigration, combining both public and private sectors, Laurence brings a wealth of expertise to her role.
+                </p>
+            </div>
+        </div>
+        <div id="right">
+           <div class="bio header">
+                <div>
+           </div>
+           <div class="bio body">
+            </div>
+
+        </div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Company Profile</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 10px;
+      }
+
+      h1,
+      h2 {
+        font-weight: 700;
+      }
+
+      h3,
+      h4 {
+        font-weight: 600;
+      }
+
+      p {
+        font-weight: 500;
+      }
+
+      #main-container {
+        font-family: "Poppins", sans-serif;
+        font-weight: 300;
+        width: 794px;
+        height: 1123px;
+        border: 1px solid black;
+        box-sizing: border-box;
+        display: grid;
+        grid-template-columns: 10fr 9fr;
+      }
+
+      #left {
+        background-color: #26263b;
+        color: white;
+        padding: 35% 10%;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+      }
+
+      #left p:last-child {
+        text-align: justify;
+      }
+
+      #left h1 {
+        position: relative;
+      }
+
+      #left h1::before {
+        content: "";
+        position: absolute;
+        top: -1.5rem;
+        left: 0;
+        width: 4.5rem;
+        height: 3px;
+        background-color: #e13128;
+      }
+
+      #right {
+        background-color: white;
+        color: #6d6f70;
+        padding: 30% 10% 0;
+        font-size: 0.8rem;
+        text-align: justify;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        position: relative;
+        gap: 10px;
+      }
+
+      #right img {
+        position: absolute;
+        top: 50px;
+        right: 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="main-container">
+      <div id="left">
+        <h1>Immigration <br />made <br />simple</h1>
+        <p>
+          Exeo is a US, Canadian, and European immigration law firm. We provide
+          legal services to help you navigate the complex and often changing
+          rules for successfully working, immigrating, investing, or studying in
+          Canada, the U.S., Mexico, or Europe.
+        </p>
+      </div>
+      <div id="right">
+        <img src="./img/logo.png" alt="Exeo Logo" width="75px" />
+        <p>
+          Exeo is a Montreal-based law firm exclusively specializing in
+          immigration law for Canada, the United States, Mexico, and Europe. Our
+          services, available at our offices in Montreal, Quebec, Paris, and
+          Mexico City, are provided by a team of lawyers with over 10 years of
+          experience in the field, authorized to practice in Quebec, Ontario,
+          the United States, and France.
+        </p>
+        <p>
+          Our team also includes senior legal assistants with extensive
+          experience in immigration law, as well as a highly qualified
+          administrative team dedicated to ensuring the success of each project.
+        </p>
+        <p>
+          Exeo stands out for the rigor of its work, personalized service,
+          expertise in immigration law, and notable commitment to key
+          associations such as AQAADI, ABC, AILA, and UIA.
+        </p>
+        <p>
+          Our multilingual team offers services in French, English, and Spanish.
+        </p>
+      </div>
+    </div>
+  </body>
+</html>

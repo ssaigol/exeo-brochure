@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cover Page</title>
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 10px;
+      }
+
+      #main-container {
+        width: 794px;
+        height: 1123px;
+        border: 1px solid black;
+        box-sizing: border-box;
+      }
+
+      #gradient {
+        background: linear-gradient(white, #c9d5dc);
+        height: calc(100% - 529px);
+      }
+
+      #image {
+        background-image: url("./img/mtl-skyline.jpg");
+        height: 529px;
+        padding: none;
+        margin: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="main-container">
+      <div id="gradient"></div>
+      <div id="image"></div>
+    </div>
+  </body>
+</html>
