@@ -1,0 +1,198 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>US Immigration Programs</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 10px;
+      }
+      
+      ul, h2, h4 {
+        margin: 0;
+        padding: 0;
+      }
+
+      h2 {
+        color: #CB605B;
+      }
+
+      h4 {
+        font-weight: 600;
+        color: #6D6F70;
+      }
+
+      p, li {
+        font-weight: 600;
+      }
+
+      #main-container {
+        font-family: "Poppins", sans-serif;
+        font-weight: 300;
+        width: 794px;
+        height: 1123px;
+        border: 1px solid black;
+        box-sizing: border-box;
+        display: grid;
+        grid-template-rows: 200px 903px 20px;
+      }
+
+      #top {
+        position: relative;
+        padding: 110px 40px;
+      }
+
+      #top #icons {
+        position: absolute;
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        top: 70px;
+        right: 80px;
+      }
+
+      #top h1 {
+        position: relative;
+        color: #303061;
+      }
+
+      #top h1::before {
+        content: "";
+        position: absolute;
+        top: -1.5rem;
+        left: 0;
+        width: 4.5rem;
+        height: 3px;
+        background-color: #e13128;
+      }
+
+      #content {
+        padding-top: 30px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 100px 1fr 1fr;
+        grid-template-areas: 
+            "header header"
+            "left right"
+            "left image"
+        ;
+      }
+
+      #content #header {
+        grid-area: header;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        padding-left: 40px;
+      }
+
+      #left {
+        display: flex;
+        flex-direction: column;
+        padding: 20px 40px;
+        text-align: justify;
+        font-size: 0.95rem;
+        color: #6D6F70;
+        grid-area: left;
+        margin: 30px 10px 20px 0;
+        box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
+      }
+
+      #right {
+        grid-area: right;
+        margin: 30px 0 0 20px;
+        box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
+        background-color: #303061;
+        color: white;
+        text-align: left;
+        padding: 30px 30px;
+        line-height: 1.9rem;
+      }
+
+      #right ul {
+        list-style: none;
+      }
+
+      #right li {
+        position: relative;
+        padding-left: 25px;
+      }
+
+      #right li::before {
+        content: '✔';
+        position: absolute;
+        left: 0;
+        color: #CB605B;
+        font-size: 1.2em;
+      }
+
+      #image {
+        margin: 0 0 20px 20px;
+        background-image: linear-gradient(to right, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0)), url("./img/family.jpg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+      }
+
+      #footer {
+        font-size: 0.6rem;
+        display: flex;
+        justify-content: end;
+        padding-right: 10px;
+
+      }
+
+      #footer a {
+        color: black;
+        text-decoration: none;
+      }
+
+
+    </style>
+  </head>
+  <body>
+    <div id="main-container">
+      <div id="top">
+        <h1>US Immigration Programs</h1>
+        <div id="icons">
+            <img src="./img/us-flag.png" alt="USA flag" width="60px">
+            <img src="./img/logo-e.png" alt="Exeo Logo" width="30px" />
+        </div>
+      </div>
+      <div id="content">
+        <div id="header">
+            <h2>EB-5 Program</h2>
+            <h4>Offers wealthy investors a simple and hassle-free <br> path to the green card.</h4>
+        </div>
+        <div id="left">
+            <p>The U.S. EB-5 Program offers high-net-worth investors a straightforward and hassle-free path to obtaining a green card. The program requires the applicant to make a minimum investment  of USD $800,000 in a Targeted Employment Area (TEA) or USD $1,050,000 in other qualifying businesses, and create at least ten full-time jobs for U.S. citizens or permanent residents.</p>
+            <p>The program grants conditional permanent residency within two years, meaning the investor, their spouse, and dependent children under 21 begin to enjoy all the rights and privileges available to green card holders in just two years.</p>
+            <p>Successful applicants benefit from the right to live, work, study, or even retire in the U.S.. The applicants' children can study as in-state students, secure employment, or start a new business without the restrictions that apply to foreign students.</p>
+        </div>
+        <div id="right">
+            <ul>
+                <li>Fast-track to U.S. permanent residency</li>
+                <li>Family members (spouse & children under 21) included</li>
+                <li>No day-to-day management requirment for investors</li>
+                <li>Access to U.S. business opportunities and markets</li>
+                <li>Eligible to apply for U.S. citizenship after five years of residency</li>
+            </ul>
+        </div>
+        <div id="image">
+        </div>
+
+      </div>
+      <div id="footer">
+        <a href="https://www.flaticon.com/free-icons/flag" title="flag icons">Flag icons created by Freepik - Flaticon</a>
+      </div>
+    </div>
+  </body>
+</html>

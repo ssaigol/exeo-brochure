@@ -1,0 +1,202 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>US Immigration Programs</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 10px;
+      }
+      
+      ul, h2, h4 {
+        margin: 0;
+        padding: 0;
+      }
+
+      h2 {
+        color: #CB605B;
+        font-size: 1.6rem;
+      }
+
+      h4 {
+        font-weight: 600;
+        color: #6D6F70;
+        font-size: 1.2rem;
+      }
+
+      p, li {
+        font-weight: 600;
+      }
+
+      #main-container {
+        font-family: "Poppins", sans-serif;
+        font-weight: 300;
+        width: 794px;
+        height: 1123px;
+        border: 1px solid black;
+        box-sizing: border-box;
+        display: grid;
+        grid-template-rows: 200px 903px 20px;
+      }
+
+      #top {
+        position: relative;
+        padding: 110px 40px;
+      }
+
+      #top #icons {
+        position: absolute;
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        top: 70px;
+        right: 80px;
+      }
+
+      #top h1 {
+        position: relative;
+        color: #303061;
+      }
+
+      #top h1::before {
+        content: "";
+        position: absolute;
+        top: -1.5rem;
+        left: 0;
+        width: 4.5rem;
+        height: 3px;
+        background-color: #e13128;
+      }
+
+      #content {
+        padding-top: 30px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 100px 1fr 1fr;
+        grid-template-areas: 
+            "header header"
+            "left right"
+            "image right"
+        ;
+      }
+
+      #content #header {
+        grid-area: header;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        padding-left: 40px;
+      }
+
+      #right {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        padding: 20px 40px;
+        text-align: justify;
+        font-size: 0.95rem;
+        color: #6D6F70;
+        grid-area: right;
+        margin: 30px 0 20px 10px;
+        box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
+      }
+
+      #left {
+        grid-area: left;
+        margin: 30px 20px 0 0;
+        box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
+        background-color: #303061;
+        color: white;
+        text-align: left;
+        padding: 30px 30px;
+        line-height: 1.9rem;
+      }
+
+      #left ul {
+        list-style: none;
+      }
+
+      #left li {
+        position: relative;
+        padding-left: 25px;
+      }
+
+      #left li::before {
+        content: '✔';
+        position: absolute;
+        left: 0;
+        color: #CB605B;
+        font-size: 1.2em;
+      }
+
+      #image {
+        margin: 0 20px 20px 0;
+        background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1)), url("./img/businesswoman.jpg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+      }
+
+      #footer {
+        font-size: 0.6rem;
+        display: flex;
+        justify-content: end;
+        padding-right: 10px;
+
+      }
+
+      #footer a {
+        color: black;
+        text-decoration: none;
+      }
+
+
+    </style>
+  </head>
+  <body>
+    <div id="main-container">
+      <div id="top">
+        <h1>US Immigration Programs</h1>
+        <div id="icons">
+            <img src="./img/us-flag.png" alt="USA flag" width="60px">
+            <img src="./img/logo-e.png" alt="Exeo Logo" width="30px" />
+        </div>
+      </div>
+      <div id="content">
+        <div id="header">
+            <h2>E-2 & E-1 Programs</h2>
+            <h4>Investor & Trade Work Permits</h4>
+        </div>
+        <div id="right">
+            <p>The E-2 visa is for entrepreneurs from treaty countries who make a substantial investment in a U.S. business, while the E-1 visa is for individuals or companies engaged in significant trade between their home country and the U.S.</p>
+            <p>The E-2 visa has no fixed minimum investment, but the amount must be sufficient to operate a viable business. The E-1 visa also has no investment requirement, as it is based on regular and substantial trade, which must primarily be conducted with the U.S.</p>
+            <p>The E-2 visa is indefinitely renewable as long as the business remains operational, while the E-1 visa is also renewable as long as trade activity continues.</p>    
+        </div>
+        <div id="left">
+            <ul>
+                <h3>Key Benefits:</h3>
+                <li>No fixed minimum investment for E-2</li>
+                <li>No investment required for E-1</li>
+                <li>Renewable as long as business or trade continues</li>
+                <li>Spouses eligible for work authorization</li>
+                <li>Flexible entry for business owners and traders</li>
+            </ul>
+        </div>
+        <div id="image">
+        </div>
+
+      </div>
+      <div id="footer">
+        <a href="https://www.flaticon.com/free-icons/flag" title="flag icons">Flag icons created by Freepik - Flaticon</a>
+      </div>
+    </div>
+  </body>
+</html>
