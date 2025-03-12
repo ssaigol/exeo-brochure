@@ -15,23 +15,26 @@
         align-items: center;
         padding-top: 10px;
       }
-      
-      ul, h2, h4 {
+
+      ul,
+      h2,
+      h4 {
         margin: 0;
         padding: 0;
       }
 
       h2 {
-        color: #CB605B;
+        color: #cb605b;
       }
 
       h4 {
         font-weight: 600;
-        color: #6D6F70;
+        color: #6d6f70;
       }
 
-      p, li {
-        font-weight: 600;
+      p,
+      li {
+        font-weight: 500;
       }
 
       #main-container {
@@ -79,11 +82,10 @@
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 100px 1fr 1fr;
-        grid-template-areas: 
-            "header header"
-            "left right"
-            "left image"
-        ;
+        grid-template-areas:
+          "header header"
+          "left right"
+          "left image";
       }
 
       #content #header {
@@ -100,16 +102,20 @@
         padding: 20px 40px;
         text-align: justify;
         font-size: 0.95rem;
-        color: #6D6F70;
+        color: #6d6f70;
         grid-area: left;
         margin: 30px 10px 20px 0;
-        box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
+        box-shadow:
+          rgba(136, 165, 191, 0.48) 6px 2px 16px 0px,
+          rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
       }
 
       #right {
         grid-area: right;
         margin: 30px 0 0 20px;
-        box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
+        box-shadow:
+          rgba(136, 165, 191, 0.48) 6px 2px 16px 0px,
+          rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
         background-color: #303061;
         color: white;
         text-align: left;
@@ -127,16 +133,22 @@
       }
 
       #right li::before {
-        content: '✔';
+        content: "✔";
         position: absolute;
         left: 0;
-        color: #CB605B;
+        color: #cb605b;
         font-size: 1.2em;
       }
 
       #image {
         margin: 0 0 20px 20px;
-        background-image: linear-gradient(to right, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0)), url("./img/family.jpg");
+        background-image:
+          linear-gradient(
+            to right,
+            rgba(255, 255, 255, 1),
+            rgba(255, 255, 255, 0)
+          ),
+          url("./img/family.jpg");
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
@@ -147,15 +159,12 @@
         display: flex;
         justify-content: end;
         padding-right: 10px;
-
       }
 
       #footer a {
         color: black;
         text-decoration: none;
       }
-
-
     </style>
   </head>
   <body>
@@ -163,35 +172,61 @@
       <div id="top">
         <h1>US Immigration Programs</h1>
         <div id="icons">
-            <img src="./img/us-flag.png" alt="USA flag" width="60px">
-            <img src="./img/logo-e.png" alt="Exeo Logo" width="30px" />
+          <img src="./img/us-flag.png" alt="USA flag" width="60px" />
+          <img src="./img/logo-e.png" alt="Exeo Logo" width="30px" />
         </div>
       </div>
       <div id="content">
         <div id="header">
-            <h2>EB-5 Program</h2>
-            <h4>Offers wealthy investors a simple and hassle-free <br> path to the green card.</h4>
+          <h2>EB-5 Program</h2>
+          <h4>
+            Offers wealthy investors a simple and hassle-free <br />
+            path to the green card.
+          </h4>
         </div>
         <div id="left">
-            <p>The U.S. EB-5 Program offers high-net-worth investors a straightforward and hassle-free path to obtaining a green card. The program requires the applicant to make a minimum investment  of USD $800,000 in a Targeted Employment Area (TEA) or USD $1,050,000 in other qualifying businesses, and create at least ten full-time jobs for U.S. citizens or permanent residents.</p>
-            <p>The program grants conditional permanent residency within two years, meaning the investor, their spouse, and dependent children under 21 begin to enjoy all the rights and privileges available to green card holders in just two years.</p>
-            <p>Successful applicants benefit from the right to live, work, study, or even retire in the U.S.. The applicants' children can study as in-state students, secure employment, or start a new business without the restrictions that apply to foreign students.</p>
+          <p>
+            The <strong>U.S. EB-5 Program</strong> offers high-net-worth
+            investors a straightforward and hassle-free path to obtaining a
+            green card. The program requires the applicant to make a minimum
+            investment of USD $800,000 in a Targeted Employment Area (TEA) or
+            USD $1,050,000 in other qualifying businesses, and create at least
+            ten full-time jobs for U.S. citizens or permanent residents.
+          </p>
+          <p>
+            The program grants
+            <strong>conditional permanent residency within two years</strong>,
+            meaning the investor, their spouse, and dependent children under 21
+            begin to enjoy all the rights and privileges available to green card
+            holders in just two years.
+          </p>
+          <p>
+            Successful applicants benefit from the right to
+            <strong>live, work, study, or even retire in the U.S.</strong>. The
+            applicants' children can study as
+            <strong>in-state students</strong>, secure employment, or start a
+            new business without the restrictions that apply to foreign
+            students.
+          </p>
         </div>
         <div id="right">
-            <ul>
-                <li>Fast-track to U.S. permanent residency</li>
-                <li>Family members (spouse & children under 21) included</li>
-                <li>No day-to-day management requirment for investors</li>
-                <li>Access to U.S. business opportunities and markets</li>
-                <li>Eligible to apply for U.S. citizenship after five years of residency</li>
-            </ul>
+          <ul>
+            <li>Fast-track to U.S. permanent residency</li>
+            <li>Family members (spouse & children under 21) included</li>
+            <li>No day-to-day management requirment for investors</li>
+            <li>Access to U.S. business opportunities and markets</li>
+            <li>
+              Eligible to apply for U.S. citizenship after five years of
+              residency
+            </li>
+          </ul>
         </div>
-        <div id="image">
-        </div>
-
+        <div id="image"></div>
       </div>
       <div id="footer">
-        <a href="https://www.flaticon.com/free-icons/flag" title="flag icons">Flag icons created by Freepik - Flaticon</a>
+        <a href="https://www.flaticon.com/free-icons/flag" title="flag icons"
+          >Flag icons created by Freepik - Flaticon</a
+        >
       </div>
     </div>
   </body>

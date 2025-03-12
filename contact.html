@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Why Choose Exeo</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 10px;
+      }
+
+      h4 {
+        margin: 0;
+        padding: 0;
+      }
+
+      #main-container {
+        font-family: "Poppins", sans-serif;
+        font-weight: 300;
+        width: 794px;
+        height: 1123px;
+        border: 1px solid black;
+        box-sizing: border-box;
+        display: grid;
+        grid-template-rows: 1fr 1.1fr;
+      }
+
+      #top {
+        background-image:
+          linear-gradient(
+            to right,
+            rgba(100, 100, 100, 0.6),
+            rgba(100, 100, 100, 0.6)
+          ),
+          url("./img/team.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+      }
+
+      #top h1 {
+        color: hsl(0, 0%, 100%);
+      }
+
+      #bottom {
+        display: grid;
+        grid-template-rows: 100px 1.5fr 1fr;
+      }
+
+      #bottom > div:first-child {
+        display: flex;
+        align-items: flex-end;
+        padding-left: 20px;
+      }
+
+      #bottom h1 {
+        position: relative;
+        padding: 0;
+        margin: 0;
+      }
+
+      #bottom h1::before {
+        content: "";
+        position: absolute;
+        top: -10px;
+        left: 0;
+        width: 4.5rem;
+        height: 3px;
+        background-color: #e13128;
+      }
+
+      #contact-types {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        padding: 50px;
+        gap: 50px;
+      }
+
+      #contact-types > * {
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        padding: 15px;
+        text-align: center;
+      }
+
+      #contact-types > div div {
+        font-weight: 500;
+        text-decoration: underline;
+      }
+
+      #email,
+      #website {
+        margin-top: 30px;
+      }
+
+      #bottom > div:last-child {
+        display: flex;
+        flex-direction: column;
+        padding-left: 20px;
+      }
+
+      ul {
+        list-style: none;
+        padding: 5px;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="main-container">
+      <div id="top">
+        <h1>Exeo: Your Trusted Partner in Immigration</h1>
+      </div>
+      <div id="bottom">
+        <div>
+          <h1>Contact Us</h1>
+        </div>
+        <div id="contact-types">
+          <div>
+            <h4>📞 Call us:</h4>
+            <div>+1 514-657-2325 (Canada)</div>
+            <div>+52 56 2095 2094 (Mexico)</div>
+          </div>
+          <div>
+            <h4>📩 Email:</h4>
+            <div id="email">info@exeo.ca</div>
+          </div>
+          <div>
+            <h4>🌎 Website:</h4>
+            <div id="website">exeo.ca</div>
+          </div>
+        </div>
+        <div>
+          <h4>📍 Visit us:</h4>
+          <ul>
+            <li>
+              <strong>Montreal Office:</strong> 417 Saint-Pierre, Suite 608,
+              Montreal, Quebec, H2Y 2M4
+            </li>
+            <li>
+              <strong>Quebec City Office:</strong> 1220 Boul. Lebourgneuf,
+              Quebec, Quebec, G2K 2G4
+            </li>
+            <li>
+              <strong>Mexico City Office:</strong> Monte Himalaya 450, Lomas de
+              Chapultepec, Miguel Hidalgo, 11000, Ciudad de México
+            </li>
+            <li>
+              <strong>Paris Office:</strong> 4 Rue Royale, 75008, Paris, France
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

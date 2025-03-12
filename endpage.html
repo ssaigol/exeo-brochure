@@ -1,0 +1,195 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Why Choose Exeo</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 10px;
+      }
+
+      #main-container {
+        font-family: "Poppins", sans-serif;
+        font-weight: 300;
+        width: 794px;
+        height: 1123px;
+        border: 1px solid black;
+        box-sizing: border-box;
+        display: grid;
+        grid-template-rows: 1fr 1.1fr;
+      }
+
+      #top {
+        background-image:
+          linear-gradient(
+            to right,
+            rgba(100, 100, 100, 0.6),
+            rgba(100, 100, 100, 0.6)
+          ),
+          url("./img/team.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+      }
+
+      #top h1 {
+        color: hsl(0, 0%, 100%);
+      }
+
+      #top div:last-child {
+        width: 100%;
+        position: absolute;
+        text-align: center;
+        font-weight: 600;
+        bottom: 0px;
+        padding-bottom: 15px;
+        padding-top: 10px;
+        background-color: #f3f3f39e;
+        color: #e13128;
+      }
+
+      #bottom {
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+        padding: 20px;
+        background-color: #303061;
+      }
+
+      #bottom > div {
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+        padding: 20px 5px 0;
+        background-color: #f3f3f3;
+      }
+
+      h3 {
+        font-size: 1rem;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+        color: #303061;
+      }
+
+      li {
+        font-size: 0.8rem;
+        position: relative;
+        padding-left: 20px;
+        font-weight: 500;
+      }
+
+      ul {
+        list-style: none;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+      }
+
+      li::before {
+        content: "✔";
+        position: absolute;
+        left: 0;
+        color: #cb605b;
+        font-size: 1.2em;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="main-container">
+      <div id="top">
+        <h1>Exeo: Your Trusted Partner in Immigration</h1>
+        <div>
+          We simplify complex immigration processes, empowering individuals
+          <br />and businesses to achieve their goals with confidence and
+          clarity.
+        </div>
+      </div>
+      <div id="bottom">
+        <div>
+          <h3>Expertise You Can Count On</h3>
+          <ul>
+            <li>
+              Over 30+ years of combined experience in business immigration.
+            </li>
+            <li>
+              A proven track record in corporate mobility, investment programs,
+              and permanent residence.
+            </li>
+          </ul>
+        </div>
+        <div>
+          <h3>Tailored Strategies</h3>
+          <ul>
+            <li>
+              Personalized solutions designed to meet your specific needs.
+            </li>
+            <li>Dedicated teams specializing in complex immigration cases.</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Transparent, Reliable, Accessible</h3>
+
+          <ul>
+            <li>
+              Seamless communication with a 24 to 48-hour response policy.
+            </li>
+            <li>Regular case updates to ensure full transparency.</li>
+            <li>Fixed-rate options for predictable planning.</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Global Reach & Multilingual Support</h3>
+
+          <ul>
+            <li>
+              Services available in French, English, Spanish, and Chinese.
+            </li>
+            <li>
+              A team covering North American and European regions, offering both
+              local and international expertise.
+            </li>
+          </ul>
+        </div>
+        <div>
+          <h3>Recognized Leadership</h3>
+          <ul>
+            <li>
+              Active roles of key organizations like AQAADI, AILA, CBA, and UIA.
+            </li>
+            <li>
+              Trusted voices in media and policy discussions on immigration
+              reforms.
+            </li>
+          </ul>
+        </div>
+        <div>
+          <h3>Proactive & Client-Focused Support</h3>
+
+          <ul>
+            <li>Complimentary corporate training and online tools.</li>
+            <li>
+              A responsive, approachable team ready to assist with any
+              challenge.
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

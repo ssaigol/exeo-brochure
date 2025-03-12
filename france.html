@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>US Immigration Programs</title>
+    <title>France Immigration Programs</title>
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
       rel="stylesheet"
@@ -25,13 +25,12 @@
 
       h2 {
         color: #cb605b;
-        font-size: 1.6rem;
       }
 
       h4 {
         font-weight: 600;
+        font-size: 1.3rem;
         color: #6d6f70;
-        font-size: 1.2rem;
       }
 
       p,
@@ -87,7 +86,7 @@
         grid-template-areas:
           "header header"
           "left right"
-          "image right";
+          "image image";
       }
 
       #content #header {
@@ -95,28 +94,27 @@
         display: flex;
         flex-direction: column;
         gap: 10px;
-        padding-right: 50px;
-        text-align: right;
+        padding-left: 40px;
       }
 
-      #right {
+      #left {
         display: flex;
         flex-direction: column;
-        justify-content: space-around;
+        justify-content: center;
         padding: 20px 40px;
-        text-align: justify;
-        font-size: 0.95rem;
+        text-align: center;
+        font-size: 1.2rem;
         color: #6d6f70;
-        grid-area: right;
-        margin: 30px 0 20px 10px;
+        grid-area: left;
+        margin: 30px 10px 0 0;
         box-shadow:
           rgba(136, 165, 191, 0.48) 6px 2px 16px 0px,
           rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
       }
 
-      #left {
-        grid-area: left;
-        margin: 30px 20px 0 0;
+      #right {
+        grid-area: right;
+        margin: 30px 0 0 10px;
         box-shadow:
           rgba(136, 165, 191, 0.48) 6px 2px 16px 0px,
           rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
@@ -127,16 +125,16 @@
         line-height: 1.9rem;
       }
 
-      #left ul {
+      #right ul {
         list-style: none;
       }
 
-      #left li {
+      #right li {
         position: relative;
         padding-left: 25px;
       }
 
-      #left li::before {
+      #right li::before {
         content: "✔";
         position: absolute;
         left: 0;
@@ -145,17 +143,15 @@
       }
 
       #image {
-        margin: 0 20px 20px 0;
-        background-image:
-          linear-gradient(
-            to right,
-            rgba(255, 255, 255, 0),
-            rgba(255, 255, 255, 1)
-          ),
-          url("./img/businesswoman.jpg");
+        grid-area: image;
+        margin-top: 20px;
+        /* background-image: rgba(255, 255, 255, 0.5) url("./img/paris.jpg"); */
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
+        background-image:
+          linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)),
+          url("./img/paris.jpg");
       }
 
       #footer {
@@ -174,48 +170,43 @@
   <body>
     <div id="main-container">
       <div id="top">
-        <h1>US Immigration Programs</h1>
+        <h1>France Immigration Program</h1>
         <div id="icons">
-          <img src="./img/us-flag.png" alt="USA flag" width="60px" />
+          <img src="./img/france-flag.png" alt="USA flag" width="60px" />
           <img src="./img/logo-e.png" alt="Exeo Logo" width="30px" />
         </div>
       </div>
       <div id="content">
         <div id="header">
-          <h2>E-2 & E-1 Programs</h2>
-          <h4>Investor & Trade Work Permits</h4>
-        </div>
-        <div id="right">
-          <p>
-            The <strong>E-2 visa</strong> is for entrepreneurs from treaty
-            countries who make a <strong>substantial investment</strong> in a
-            U.S. business, while the <strong>E-1 visa</strong> is for
-            individuals or companies engaged in
-            <strong>significant trade</strong> between their home country and
-            the U.S.
-          </p>
-          <p>
-            The <strong>E-2 visa has no fixed minimum investment</strong>, but
-            the amount must be sufficient to operate a viable business. The
-            <strong>E-1 visa also has no investment requirement</strong>, as it
-            is based on regular and substantial trade, which must primarily be
-            conducted with the U.S.
-          </p>
-          <p>
-            The <strong>E-2 visa is indefinitely renewable</strong> as long as
-            the business remains operational, while the
-            <strong>E-1 visa is also renewable</strong> as long as trade
-            activity continues.
-          </p>
+          <h2>Talent Passport</h2>
+          <h4>Passeport Talent</h4>
         </div>
         <div id="left">
+          <p>
+            A long-term residence permit designed to attract
+            <strong
+              >highly skilled professionals, entrepreneurs, researchers, and
+              investors</strong
+            >
+            to France. It is part of France’s initiative to strengthen its
+            economy through foreign expertise.
+          </p>
+        </div>
+        <div id="right">
           <ul>
             <h3>Key Benefits:</h3>
-            <li>No fixed minimum investment for E-2</li>
-            <li>No investment required for E-1</li>
-            <li>Renewable as long as business or trade continues</li>
-            <li>Spouses eligible for work authorization</li>
-            <li>Flexible entry for business owners and traders</li>
+            <li>Residence permit valid for up to 4 years, renewable</li>
+            <li>
+              Provides a direct path to long-term residency or French
+              citizenship
+            </li>
+            <li>
+              Family members receive residence permits with work authorization
+            </li>
+            <li>
+              Access to France’s thriving business, research, and startup
+              ecosystem
+            </li>
           </ul>
         </div>
         <div id="image"></div>

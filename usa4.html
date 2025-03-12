@@ -16,20 +16,22 @@
         padding-top: 10px;
       }
 
-      h2, h3, h4, ul {
+      h2,
+      h3,
+      h4,
+      ul {
         padding: 0;
         margin: 0;
       }
 
       h2 {
-        color: #CB605B;
+        color: #cb605b;
       }
 
       h4 {
         font-weight: 600;
-        color: #6D6F70;
+        color: #6d6f70;
       }
- 
 
       #main-container {
         font-family: "Poppins", sans-serif;
@@ -85,15 +87,18 @@
 
       #eb1a {
         margin-left: 20px;
-        background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1));
+        background-image: linear-gradient(
+          to right,
+          rgba(255, 255, 255, 0),
+          rgba(255, 255, 255, 1)
+        );
 
         display: grid;
         grid-template-columns: 1.5fr 1fr;
         grid-template-rows: 100px 1fr;
-        grid-template-areas: 
-            "header list"    
-            "paragraph list"
-        ;
+        grid-template-areas:
+          "header list"
+          "paragraph list";
         padding: 20px;
         column-gap: 20px;
       }
@@ -102,7 +107,7 @@
         grid-area: header;
         display: flex;
         flex-direction: column;
-        justify-content: center
+        justify-content: center;
       }
 
       #content > div > p {
@@ -136,23 +141,30 @@
       }
 
       #content > div li::before {
-        content: '✔';
+        content: "✔";
         position: absolute;
         left: 0;
         color: #303061;
         font-size: 1.2em;
       }
 
+      ul h4 {
+        color: #303061;
+      }
+
       #o1 {
         margin-right: 20px;
-        background-image: linear-gradient(to right, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0));
+        background-image: linear-gradient(
+          to right,
+          rgba(255, 255, 255, 1),
+          rgba(255, 255, 255, 0)
+        );
         display: grid;
-        grid-template-columns: 1fr 1.5fr ;
+        grid-template-columns: 1fr 1.5fr;
         grid-template-rows: 100px 1fr;
-        grid-template-areas: 
-            "list header"    
-            "list paragraph"
-        ;
+        grid-template-areas:
+          "list header"
+          "list paragraph";
         padding: 20px;
         column-gap: 20px;
       }
@@ -170,15 +182,12 @@
         display: flex;
         justify-content: end;
         padding-right: 10px;
-
       }
 
       #footer a {
         color: black;
         text-decoration: none;
       }
-
-
     </style>
   </head>
   <body>
@@ -186,48 +195,68 @@
       <div id="top">
         <h1>US Immigration Programs</h1>
         <div id="icons">
-            <img src="./img/us-flag.png" alt="USA flag" width="60px">
-            <img src="./img/logo-e.png" alt="Exeo Logo" width="30px" />
+          <img src="./img/us-flag.png" alt="USA flag" width="60px" />
+          <img src="./img/logo-e.png" alt="Exeo Logo" width="30px" />
         </div>
       </div>
       <div id="content">
         <div id="eb1a">
-            <div>
-                <h2>EB-1A Program</h2>
-                <h4>Extraordinary Ability</h4>
-            </div>
-            <p>The EB-1A visa is designed for individuals with extraordinary ability in sciences, arts, education, business, or athletics, demonstrated through sustained national or international acclaim. This visa does not require a job offer, allowing for self-petition.
-            </p>
-            <div>
-                <ul>
-                    <h4>Key Benefits:</h4>
-                    <li>No job offer required (self-petition possible)</li>
-                    <li>Priority processing for eligible applicants</li>
-                    <li>Direct path to a green card</li>
-                    <li>Ideal for highly accomplished professionals, artists, entrepreneurs</li>
-                </ul>
-            </div>
+          <div>
+            <h2>EB-1A Program</h2>
+            <h4>Extraordinary Ability</h4>
+          </div>
+          <p>
+            The <strong>EB-1A visa</strong> is designed for individuals with
+            <strong>extraordinary ability </strong> in sciences, arts,
+            education, business, or athletics, demonstrated through sustained
+            national or international acclaim. This visa
+            <strong>does not require a job offer</strong>, allowing for
+            self-petition.
+          </p>
+          <div>
+            <ul>
+              <h4>Key Benefits:</h4>
+              <li>No job offer required (self-petition possible)</li>
+              <li>Priority processing for eligible applicants</li>
+              <li>Direct path to a green card</li>
+              <li>
+                Ideal for highly accomplished professionals, artists,
+                entrepreneurs
+              </li>
+            </ul>
+          </div>
         </div>
         <div id="o1">
-            <div>
-                <h2>O-1 Program</h2>
-                <h4>Individuals with Extraordinary Ability</h4>
-            </div>
-            <p>The O-1 visa is reserved for individuals with extraordinary ability in sciences, education, business, athletics, or the arts, recognized through national or international awards, major achievements, and industry contributions. Unlike the EB-1A, the O-1 does not directly lead to a green card, but it is renewable indefinitely for qualifying individuals.</p>
-            <div>
-                <ul>
-                    <h4>Key Benefits:</h4>
-                    <li>Renewable indefinitely</li>
-                    <li>No labor certification required</li>
-                    <li>Recognition by national/international awards</li>
-                    <li>Ideal for top-tier professionals, artists, and scientists</li>
-                </ul>
-            </div>
+          <div>
+            <h2>O-1 Program</h2>
+            <h4>Individuals with Extraordinary Ability</h4>
+          </div>
+          <p>
+            The <strong>O-1 visa</strong> is reserved for individuals with
+            <strong>extraordinary ability</strong> in sciences, education,
+            business, athletics, or the arts, recognized through
+            <strong
+              >national or international awards, major achievements, and
+              industry contributions </strong
+            >. Unlike the EB-1A, the O-1 does not directly lead to a green card,
+            but it is <strong>renewable indefinitely</strong> for qualifying
+            individuals.
+          </p>
+          <div>
+            <ul>
+              <h4>Key Benefits:</h4>
+              <li>Renewable indefinitely</li>
+              <li>No labor certification required</li>
+              <li>Recognition by national/international awards</li>
+              <li>Ideal for top-tier professionals, artists, and scientists</li>
+            </ul>
+          </div>
         </div>
-
       </div>
       <div id="footer">
-        <a href="https://www.flaticon.com/free-icons/flag" title="flag icons">Flag icons created by Freepik - Flaticon</a>
+        <a href="https://www.flaticon.com/free-icons/flag" title="flag icons"
+          >Flag icons created by Freepik - Flaticon</a
+        >
       </div>
     </div>
   </body>
