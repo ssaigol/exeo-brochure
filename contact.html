@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Why Choose Exeo</title>
+    <title>Contact Us</title>
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
       rel="stylesheet"
@@ -30,6 +30,7 @@
         box-sizing: border-box;
         display: grid;
         grid-template-rows: 1fr 1.1fr;
+        position: relative;
       }
 
       #top {
@@ -55,6 +56,7 @@
       #bottom {
         display: grid;
         grid-template-rows: 100px 1.5fr 1fr;
+        border-top: 6px solid #303061;
       }
 
       #bottom > div:first-child {
@@ -74,7 +76,7 @@
         position: absolute;
         top: -10px;
         left: 0;
-        width: 4.5rem;
+        width: 6rem;
         height: 3px;
         background-color: #e13128;
       }
@@ -119,10 +121,37 @@
         display: flex;
         flex-direction: column;
       }
+
+      #rightbanner,
+      #leftbanner,
+      #bottombanner {
+        background-color: #303061;
+        position: absolute;
+      }
+
+      #rightbanner {
+        height: 1123px;
+        width: 6px;
+        right: 0px;
+      }
+      #leftbanner {
+        height: 1123px;
+        width: 6px;
+        left: 0px;
+      }
+
+      #bottombanner {
+        width: 794px;
+        height: 6px;
+        bottom: 0px;
+      }
     </style>
   </head>
   <body>
     <div id="main-container">
+      <div id="rightbanner"></div>
+      <div id="leftbanner"></div>
+      <div id="bottombanner"></div>
       <div id="top">
         <h1>Exeo: Your Trusted Partner in Immigration</h1>
       </div>
