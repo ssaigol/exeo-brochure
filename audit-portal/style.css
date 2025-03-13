@@ -1,0 +1,50 @@
+#page-container {
+    width: 100vw;
+    height: 100vh;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    grid-template-rows: 100px 1fr;
+    grid-template-areas:
+        "employees boards"
+        "employees main"
+    ;
+}
+
+#page-container > div {
+    border: 1px solid black;
+}
+
+#employees {
+    grid-area: employees;
+    display: flex;
+    flex-direction: column;
+    padding: 50px 20px;
+    gap: 20px;
+}
+
+#boards {
+    grid-area: boards;
+    display: flex;
+    padding: 40px 25px;
+    gap: 15px;
+}
+
+#main-container {
+    grid-area: main;
+    display: grid;
+    padding: 50px;
+    gap: 25px;
+    grid-template-columns: repeat(auto-fit, 100px);
+    grid-auto-rows: 50px;
+}
+
+#main-container > div {
+    height: 50px;
+    width: 50px;
+    border: 1px solid black;
+}
+
+.employee, .board {
+    cursor: pointer;
+}
